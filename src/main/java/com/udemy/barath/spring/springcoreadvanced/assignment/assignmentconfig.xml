@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://www.springframework.org/schema/beans">
+
+	
+	<bean class="com.udemy.barath.spring.springcoreadvanced.assignment.Reservation" name="reservation" >
+		<property name="id">
+			<value>1111</value>
+		</property>
+		<property name="time">
+			<value>4/16/2021 13:00</value>
+		</property>
+	</bean>
+	<bean class="com.udemy.barath.spring.springcoreadvanced.assignment.Customer"
+		name="customer" autowire="byType">
+		<property name="name">
+			<value>Aziza</value>
+		</property>
+	</bean>
+
+
+
+
+</beans>
