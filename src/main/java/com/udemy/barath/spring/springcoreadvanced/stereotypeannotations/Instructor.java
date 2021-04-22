@@ -11,7 +11,8 @@ import org.springframework.stereotype.Component;
 @Scope("prototype") //Defines scope. Default is singleton
 public class Instructor {
 
-	@Value("10") //assigns value to id. Overrides any values assigned "normally"
+	//@Value("10") //assigns value to id. Overrides any values assigned "normally"
+	@Value("#{T(java.lang.Math).abs(-10)}") //example of spring expression language using static method
 	private int id;
 	@Value("John")
 	private String name;
